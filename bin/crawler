@@ -6,16 +6,33 @@
 
 var program = require('commander');
 
+var c = {
+  category: 0,
+  book : 330,
+  path : 'dist'
+}
 program
   .version(require('../package.json').version)
-  .option('-p, --peppers', 'Add peppers')
-  .option('-P, --pineapple', 'Add pineapple')
-  .option('-b, --bbq-sauce', 'Add bbq sauce')
-  .option('-c, --cheese [type]', 'Add the specified type of cheese [marble]', 'marble')
+  .option('-c, --category [type]', 'category')
+  .option('-b, --book [type]', 'book')
+  .option('-p, --path [type]', 'path default dist/')
   .parse(process.argv);
 
-console.log('you ordered a pizza with:');
-if (program.peppers) console.log('  - peppers');
-if (program.pineapple) console.log('  - pineapple');
-if (program.bbqSauce) console.log('  - bbq');
-console.log('  - %s cheese', program.cheese);
+
+if (program.category) {
+  c.category = program.category;
+}
+
+if (program.book) {
+  c.book = program.book;
+}
+
+if (program.path) {
+  c.path = program.path;
+}
+
+try {
+  var crawler = require('..')(c.category, c.book, c.path)
+} catch (e) {
+  console.log(e)
+}
