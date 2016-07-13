@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/i5ting/hd-crawer/issues"
   },
-  "homepage": "https://github.com/i5ting/hd-crawer#readme"
+  "homepage": "https://github.com/i5ting/hd-crawer#readme",
+  "dependencies": {
+    "crawler": "^0.4.3",
+    "jsdom": "^9.4.1",
+    "mkdirp": "^0.5.1",
+    "progress": "^1.1.8"
+  }
 }
