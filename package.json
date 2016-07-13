@@ -8,7 +8,7 @@
   },
   "preferGlobal": "true",
   "bin": {
-    "crawler": "crawler.js"
+    "crawler": "bin/crawler.js"
   },
   "repository": {
     "type": "git",
