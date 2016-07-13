@@ -6,6 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "preferGlobal": "true",
+  "bin": {
+    "crawler": "crawler"
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/i5ting/hd-crawer.git"
