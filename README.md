@@ -1,4 +1,35 @@
-# hd-crawer
+# hd-crawler
+
+大主宰爬虫器
+
+## Install
+
+
+```
+$ npm i -g hd-crawler
+```
+
+## Usages
+
+```
+$ crawler -h
+
+  Usage: crawler [options]
+
+  Options:
+
+    -h, --help             output usage information
+    -V, --version          output the version number
+    -c, --category [type]  category
+    -b, --book [type]      book
+    -p, --path [type]      path default dist/
+```
+
+or
+
+```
+$ crawler -b 330 -c 0
+```
 
 ## api
 
