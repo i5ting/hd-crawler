@@ -35,6 +35,7 @@ $ crawler -b 330 -c 0
 
 - category
 - book
+- processing = function(current, count) {{}
 - path
 
 ## TODO
